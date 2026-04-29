@@ -154,8 +154,8 @@ cd 2026_Mirones_DL_FWI_Projections
      ```
 ### 3. Once the environment is installed and activated, open the Jupyter notebook and enjoy
 ```bash
-     conda activate deep-fwi
-     jupyter-notebook
+conda activate deep-fwi
+jupyter-notebook
 ```
 
 ---
