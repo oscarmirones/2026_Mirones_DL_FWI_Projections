@@ -131,7 +131,7 @@ MIT
 ---
 
 
-## ⚡ Quick Start (TO DO)
+## ⚡ Quick Start
 
 ### 1. Clone repository
 ```bash 
