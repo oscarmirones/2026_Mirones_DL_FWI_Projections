@@ -140,18 +140,21 @@ cd 2026_Mirones_DL_FWI_Projections
 ```
 ### 2. Create your climate4R environment
 
-  i). **Create the environment using Mamba for faster dependency resolution:**
-     ```bash
-     conda create -n deep-fwi -c conda-forge mamba
-     ``` 
-  ii). **Activate environment**
-     ```bash
-     conda activate deep-fwi
-     ``` 
-  iii). **Use Mamba to install the packages required**
-     ```bash
-     mamba env create -f environment.yaml
-     ```
+2.1. **Create the environment using Mamba for faster dependency resolution:**
+  ```bash
+  conda create -n deep-fwi -c conda-forge mamba
+   ```
+    
+2.2. **Activate environment**
+ ```bash
+ conda activate deep-fwi
+ ```
+ 
+2.3. **Use Mamba to install the packages required**
+ ```bash
+ mamba env create -f environment.yaml
+ ```
+     
 ### 3. Once the environment is installed and activated, open the Jupyter notebook and enjoy
 ```bash
 conda activate deep-fwi
