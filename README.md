@@ -85,35 +85,6 @@ Generate high-resolution fire weather projections.
 
 ---
 
-
-## 📖 How to Use This Repository (TO DO)
-
-### Installation
-Ensure you have R 4.3+ with these packages:
-```r
-install.packages(c("climate4R", "downscaleR.keras", "raster", "sp"))
-```
-
-### Running the Notebook
-1. Clone this repository
-2. Open `main.ipynb` in RStudio or Jupyter with R kernel
-3. Follow the 4-phase workflow
-4. Customize climate models or regions as needed
-
-### Key Parameters to Modify
-```r
-# Change climate model
-model <- "CMIP6_model_name"
-
-# Change emission scenario
-scenario <- "SSP1-2.6"  # or SSP2-4.5, SSP5-8.5
-
-# Change target resolution
-target_resolution <- 0.05  # for even finer detail
-```
-
----
-
 ## 🌡️ What is FWI (Fire Weather Index)?
 
 The **Canadian Fire Weather Index** combines:
@@ -130,7 +101,7 @@ Into a single metric: **how dangerous fire conditions are**. Higher FWI = greate
 
 This implementation is based on:
 
-> **Mirones, Ó., et al. (2026).** "Robust Deep Learning Projections Reveal Intensification and Seasonal Reorganization of Fire Weather over the Iberian Peninsula." *Earth's Future* (Manuscript).
+> **Mirones, Ó., et al. (2026).** "Robust Deep Learning Projections Reveal Intensification and Seasonal Reorganization of Fire Weather over the Iberian Peninsula." *Submitted to Earth's Future*.
 
 The paper demonstrates that deep learning-based downscaling:
 1. Reproduces fine-scale fire weather patterns better than statistical methods
@@ -160,19 +131,29 @@ MIT
 
 ## ⚡ Quick Start (TO DO)
 
+### 1. Clone repository
+```bash 
+git clone https://github.com/oscarmirones/2026_Mirones_DL_FWI_Projections.git
+cd 2026_Mirones_DL_FWI_Projections
+```
+### 2. Create your climate4R environment
+
+  i). **Create the environment using Mamba for faster dependency resolution:**
+     ```bash
+     conda create -n deep-fwi -c conda-forge mamba
+     ``` 
+  ii). **Activate environment**
+     ```bash
+     conda activate deep-fwi
+     ``` 
+  iii). **Use Mamba to install the packages required**
+     ```bash
+     mamba env create -f environment.yaml
+     ```
+### 3. Once the environment is installed and activated, open the Jupyter notebook and enjoy
 ```bash
-# 1. Clone repository
-git clone https://github.com/yourusername/fireweather-dl.git
-cd fireweather-dl
-
-# 2. Open R and load required packages
-R
-
-# 3. Run the notebook
-# In RStudio: Open main.ipynb and click "Run All"
-# In command line: rmarkdown::render("main.ipynb")
-
-# 4. Explore results in /output/ directory
+     conda activate deep-fwi
+     jupyter-notebook
 ```
 
 ---
