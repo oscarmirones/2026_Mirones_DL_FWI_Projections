@@ -87,6 +87,8 @@ Generate high-resolution fire weather projections.
 
 ## 🌡️ What is FWI (Fire Weather Index)?
 
+![Fire Weather Index Components](aux/fwi_structure.png)
+
 The **Canadian Fire Weather Index** combines:
 - Temperature
 - Humidity
