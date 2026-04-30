@@ -1,4 +1,4 @@
-# 🔥 Robust Deep Learning Projections Reveal Intensification and Seasonal Reorganization of Fire Weather over the Iberian Peninsula
+# Robust Deep Learning Projections Reveal Intensification and Seasonal Reorganization of Fire Weather over the Iberian Peninsula
 
 **Deep Learning Projections of Fire Weather Index over the Iberian Peninsula**
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 🌍 What This Is
+## What This Is
 
 This repository is based on Mirones et al. (2026) - *Robust Deep Learning Projections Reveal Intensification and Seasonal Reorganization of Fire Weather over the Iberian Peninsula*, following a simple adaptation.
 
@@ -15,7 +15,7 @@ By combining cutting-edge deep learning with climate science, we **downscale gen
 
 ---
 
-## 🎯 The Problem We're Solving
+## The Problem We're Solving
 
 Traditional climate models run at **coarse resolution** (~1.5°). For fire risk assessment, this is too broad:
 - ❌ Cannot capture local topography and microclimates
@@ -26,45 +26,45 @@ Traditional climate models run at **coarse resolution** (~1.5°). For fire risk 
 
 ---
 
-## ✨ What Makes This Different
+## What Makes This Different
 
-🧠 **Deep Learning**
+**Deep Learning**
 - Captures non-linear relationships between the input variables
 - Learns spatial patterns from ERA5 reanalysis (0.25° native resolution, but interpolated to 1.5º, matching with GCMs resolution)
 - Generalizes to future climates
 
-🌐 **Ultra-High Resolution**
+**Ultra-High Resolution**
 - 0.1° = ~11 km grid spacing
 - From continental (1.5°) to local (0.1º)
 
-📊 **Multi-Model Ensemble**
+**Multi-Model Ensemble**
 - Leverages CMIP6 ensemble uncertainty. EC-EARTH3 is used in the reproducible example
 - Robust projections even across climate models
 - Captures both intensification and seasonal reorganization
 
 ---
 
-## 📋 Project Workflow
+## Project Workflow
 
-### **Phase 1: Training Data Preparation** 🏗️
+### **Phase 1: Training Data Preparation** 
 Extract high-resolution predictand data (ERA5-Land) and coarse climate input data (ERA5) for the historical period (1979-2014).
 
-### **Phase 2: Deep Learning Model Development** 🧠
+### **Phase 2: Deep Learning Model Development** 
 Train a Keras/TensorFlow neural network to learn the relationship:
 ```
 Coarse Climate Data → Deep Neural Network [U-Net]  → High-Resolution Fire Weather Index
 ```
 The model learns how to extract local details from regional patterns.
 
-### **Phase 3: Climate Projections Processing** 🌍
+### **Phase 3: Climate Projections Processing** 
 Apply the trained model to future CMIP6 projections under the different emission scenarios. In this reproducible example, we consider the scenario SSP5-8.5 (high-emission) during the end of the century 2080-2099.
 
-### **Phase 4: Downscaling & Results** 📈
+### **Phase 4: Downscaling & Results** 
 Generate high-resolution fire weather projections. 
 
 ---
 
-## 🔧 Technical Stack
+## Technical Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -75,7 +75,7 @@ Generate high-resolution fire weather projections.
 
 ---
 
-## 📊 Data Sources
+## Data Sources
 
 | Dataset | Resolution | Period | Purpose |
 |---------|-----------|--------|---------|
@@ -85,7 +85,7 @@ Generate high-resolution fire weather projections.
 
 ---
 
-## 🌡️ What is FWI (Fire Weather Index)?
+## What is FWI (Fire Weather Index)?
 
 ![Fire Weather Index Components](aux/fwi_structure.png)
 
@@ -99,7 +99,7 @@ Into a single metric: **how dangerous fire conditions are**. Higher FWI = greate
 
 ---
 
-## 📚 Scientific Foundation
+## Scientific Foundation
 
 This implementation is based on:
 
@@ -114,7 +114,7 @@ The paper demonstrates that deep learning-based downscaling:
 ---
 
 
-## 📧 Contact & Attribution
+## Contact & Attribution
 
 **Author**: Óscar Mirones  
 **Year**: 2026  
@@ -124,14 +124,14 @@ Questions? Check the inline notebook comments or review the published paper.
 
 ---
 
-## ⚖️ License
+## License
 
 MIT
 
 ---
 
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Clone repository
 ```bash 
